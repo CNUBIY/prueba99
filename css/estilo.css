@@ -1,0 +1,172 @@
+.contenedor{
+  background: white;
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.contenedor6{
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor .fila1{
+  padding:20PX;
+}
+
+
+.texto1{
+  color: #0056b3;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;
+  font-size: 60px;
+}
+.texto1:hover{
+  color: #80B3FF;
+  font-size: 55px;
+  transition: font-size 0.5s;
+
+}
+.contenedor .fila1 .texto1{
+  color: #0056b3;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;
+  font-size: 60px;
+}
+
+.contenedor .fila1 .texto1:hover{
+  color: #80B3FF;
+  font-size: 55px;
+  transition: font-size 0.5s;
+
+}
+
+
+.texto{
+  flex: 60%;
+
+}
+
+.imagen{
+  flex: 40%;
+
+}
+
+.contenedor2{
+  background: #98E4FF;
+  width: 80%;
+  height: 231px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Estilos del carrusel */
+.carrusel {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.imagenes {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos de los botones */
+.anterior,
+.siguiente {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color:gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.anterior {
+  left: 10px;
+}
+
+.siguiente {
+  right: 10px;
+}
+
+.menu-red-social {
+  display: flex; /* Alinea los íconos horizontalmente */
+}
+
+.menu-red-social a {
+  margin: 0 5px; /* Agrega un margen entre los íconos */
+}
+
+.icono-red-social {
+  width: 70px; /* Establece el ancho deseado para los íconos */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.contenedor3{
+  background: white;
+  width: 50%;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor4{
+  background: #98E4FF;
+  width: auto;
+  height: 231px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.fila {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.columna {
+  flex: 1;
+  padding: 10px;
+  max-width: 325px; /* Ancho máximo deseado */
+  margin: 100px; /* Agrega márgenes para separar las columnas */
+  border: 3px solid #687EFF;
+}
+
+.imagenes-venta {
+  width: 300px; /* Ancho deseado */
+  height: 200px; /* Altura deseada */
+}
+
+.texto-ventas{
+  color: #0056b3;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 20px;
+}
+.texto-ventas:hover{
+  color: #80B3FF;
+  font-size: 21px;
+  transition: font-size 0.5s;
+
+}

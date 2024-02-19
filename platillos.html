@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Página de Ejemplo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  </head>
+  <header>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"><img class="icono-red-social" src="img/UTC.png" alt="Logo sitio"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="crud.html">CRUD <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="receta.html">Receta</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="venta.html">Ventas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="platillos.html">Platillos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+  </header>
+
+  <body style="background:#B6FFFA;">
+    <h2 class="texto1">Mira todos los platillos que tenemos para ti</h2>
+
+    <div class="contenedor">
+      <div class="fila1">
+        <h2 class="texto1">Chaulafán de Camarón</h2>
+        <div style="text-align:center;">
+          <p>Este delicioso chaulafán mixto especial se prepara con arroz, pollo, carne de cerdo, camarones, vegetales, huevo.</p>
+          <b>Que esperas para probarlo</b>
+        </div>
+      </div>
+      <div class="fila1">
+         <img id="imag1" style="width:400px; height:auto;"src="img/chau.jpg" alt="Imagen comida">
+         <script type="text/javascript">
+           $(document).ready(function() {
+             let reducido = false;
+
+             $('#imag1').click(function() {
+               if (!reducido) {
+                 $(this).animate({ width: '-=50px', height: '-=50px' });
+                 reducido = true;
+               }
+             });
+           });
+         </script>
+      </div>
+    </div> <br>
+    <div class="contenedor">
+      <div class="fila1">
+         <img id="imag2" style="width:450px; height:auto;" src="img/tallarin.jpg" alt="Imagen comida">
+         <script type="text/javascript">
+           $(document).ready(function() {
+             let reducido = false;
+
+             $('#imag2').click(function() {
+               if (!reducido) {
+                 $(this).animate({ width: '-=50px', height: '-=50px' });
+                 reducido = true;
+               }
+             });
+           });
+         </script>
+      </div>
+      <div class="fila1">
+        <h2 class="texto1">Tallarín Especial</h2>
+        <div style="text-align:center;">
+          <p>Es la perfecta combinación de nuestras mejores carnes, cerdo, pollo y camarón salteados con frescas verduras y bañados en salsa de soya o agridulce, combinado de wantán frito y salsa agridulce, no podrás resistir.</p>
+          <b>Que esperas para probarlo</b>
+        </div>
+      </div>
+    </div> <br>
+    <div class="contenedor">
+      <div class="fila1">
+        <h2 class="texto1">Chaufarín</h2>
+        <div style="text-align:center;">
+          <p>Nuestro Chaulafán Especial tiene varios acompañantes que resaltan su sabor, el tallarín con filetitos de pollo y camarones es uno de ellos. ¡Solo pruébalo y lo confirmarás!</p>
+          <b>Que esperas para probarlos</b>
+        </div>
+      </div>
+      <div class="fila1">
+         <img id="imag3" style="width:500px; height:auto;" src="img/mixto.jpg" alt="Imagen comida">
+         <script type="text/javascript">
+           $(document).ready(function() {
+             let reducido = false;
+
+             $('#imag3').click(function() {
+               if (!reducido) {
+                 $(this).animate({ width: '-=50px', height: '-=50px' });
+                 reducido = true;
+               }
+             });
+           });
+         </script>
+      </div>
+    </div> <br>
+
+    <div class="contenedor">
+      <div class="fila1">
+         <img id="imag4" style="width:450px; height:auto;" src="img/chaumix.jpg" alt="Imagen comida">
+         <script type="text/javascript">
+           $(document).ready(function() {
+             let reducido = false;
+
+             $('#imag4').click(function() {
+               if (!reducido) {
+                 $(this).animate({ width: '-=50px', height: '-=50px' });
+                 reducido = true;
+               }
+             });
+           });
+         </script>
+      </div>
+      <div class="fila1">
+        <h2 class="texto1">Chaulafán Mixto</h2>
+        <div style="text-align:center;">
+          <p>Algunos lo llaman "el favorito", para nosotros es un plato que nos encanta preparar y que se debe probar al menos una vez en la vida. Es imposible resistirse ante esta deliciosa combinación de arroz salteado con salsa de soya con chancho, pollo y camarón con arvejas y cebolla, acompañado de wantán frito y salsa agridulce, ¡será amor a primer bocado!</p>
+          <b>Que esperas para probarlo</b>
+        </div>
+      </div>
+    </div> <br>
+
+    <div class="contenedor">
+      <div class="fila1">
+        <h2 class="texto1">Pollo con Verduras</h2>
+        <div style="text-align:center;">
+          <p>Lo mejor de nuestros crujientes vegetales salteados en el wok y acompañados con ajonjolí, un sabor que no puedes dejar de probarlo.</p>
+          <b>Que esperas para probarlos</b>
+        </div>
+      </div>
+      <div class="fila1">
+         <img id="imag5" style="width:500px; height:auto;" src="img/pollover.jpg" alt="Imagen comida">
+         <script type="text/javascript">
+           $(document).ready(function() {
+             let reducido = false;
+
+             $('#imag5').click(function() {
+               if (!reducido) {
+                 $(this).animate({ width: '-=50px', height: '-=50px' });
+                 reducido = true;
+               }
+             });
+           });
+         </script>
+      </div>
+    </div> <br>
+  </body>
+  <footer style="background:#687EFF; color:white;">
+    <div style="display: flex; padding: 40px;">
+    <div style="flex-grow: 1;">
+      <p>Carlos Colcha</p>
+      <p>Séptimo A</p>
+      <p>22 de Noviembre del 2023</p>
+    </div>
+    <div style="flex-grow: 1;">
+      <p>Universidad Técnica de Cotopaxi</p>
+      <p>Sistemas de Información</p>
+      <p>Desarrollo Web</p>
+
+    </div>
+    <div style="flex-grow: 1;">
+      <nav class="menu-red-social">
+        <a href="https://www.facebook.com/carlos.colcha.9250/"><img class="icono-red-social" src="img/facebook_16423.png" alt="Logo Facebook"></a>
+        <a href="https://www.instagram.com/c.nubi.y/"><img class="icono-red-social" src="img/insta.png" alt="Logo Instagram"></a>
+        <a href="https://www.utc.edu.ec/"><img class="icono-red-social" src="img/UTC.png" alt="Logo UTC"></a>
+      </nav>
+      <!-- Contenido de la tercera columna -->
+    </div>
+  </div>
+  </footer>
+</html>

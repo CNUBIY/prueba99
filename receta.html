@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Página de Ejemplo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  </head>
+  <header>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"><img class="icono-red-social" src="img/UTC.png" alt="Logo sitio"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="crud.html">CRUD <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="receta.html">Receta</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="venta.html">Ventas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="platillos.html">Platillos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+  </header>
+
+  <body style="background:#B6FFFA;">
+    <div class="contenedor">
+      <div class="fila1">
+        <h2 class="texto1">Receta de estofado de pollo</h2>
+        <div style="text-align:center;">
+          <p>Vamos a aprender a hacer un rico estofado de pollo, da click en cada paso en orden y ve siguiendo las instrucciones nadas por los botones.</p>
+          <p>Suerte y Buen Provecho</p>
+        </div>
+      </div>
+      <div class="fila1">
+         <img src="img/estofado-de-pollo.jpg" alt="Imagen comida">
+      </div>
+    </div> <br>
+
+    <div class="contenedor3">
+      <div class="fila1">
+        <button style="margin-right:40px;" onclick="ingredientes();" type="button" class="btn btn-primary btn-lg btn-block">Ingredientes</button>
+        <script type="text/javascript">
+          function ingredientes(){
+            alert("INGREDIENTES: \n> Un pollo entero trozado\n> Sal, pimienta y comino\n> 1 cebolla picada\n> 2 cucharadas de ajo molido\n> 1 cucharada de ají panca en polvo\n> 3 tomates en cubo pequeños\n 200gr de arbejas\n> 2 zanahorias medianas\n> 2 papas\n> Cilantro\n> Arroz");
+          }
+        </script>
+      </div>
+      <div class="fila1">
+         <img style="width:400px; height:auto; padding: 20px;" src="img/ingred.jpg" alt="Imagen comida">
+      </div>
+    </div> <br>
+
+    <div class="contenedor3">
+      <div class="fila1">
+        <button onclick="paso1();" style="margin-right:40px;" onclick="ingredientes();" type="button" class="btn btn-primary btn-lg btn-block">Paso 1</button><br><br>
+        <script type="text/javascript">
+          function paso1(){
+            alert("Trozar el pollo y sazonar con sal, pimienta y comino. En una sartén a fuego medio, calentamos un chorro generoso de aceite y, una vez caliente, doramos las presas de pollo por ambos lados.");
+          }
+        </script>
+        <button onclick="paso2();" style="margin-right:40px;" onclick="ingredientes();" type="button" class="btn btn-primary btn-lg btn-block">Paso 2</button><br><br>
+        <script type="text/javascript">
+          function paso2(){
+            alert("Una vez doradas las presas de pollo, retiramos y guardamos aparte. En la misma sartén, a fuego medio, realizamos nuestro aderezo sofriendo la cebolla cortada en cubitos junto con el ajo molido. ");
+          }
+        </script>
+        <button onclick="paso3();" style="margin-right:40px;" onclick="ingredientes();" type="button" class="btn btn-primary btn-lg btn-block">Paso 3</button><br><br>
+        <script type="text/javascript">
+          function paso3(){
+            alert("Una vez que veamos que se quiere pegar al fondo de la olla y la cebolla está translúcida, agregamos el ají panca en polvo sin picante y también el tomate cortado en cubitos pequeños.");
+          }
+        </script>
+      </div>
+      <div class="fila1">
+         <img id="img1"style="width:300px; height:auto; padding-left: 50px;" src="img/pollo.png" alt="Imagen comida">
+
+      </div>
+    </div> <br>
+    <div style=""class="contenedor3">
+      <div class="fila1">
+        <button onclick="paso4();" style="margin-right:40px;" onclick="ingredientes();" type="button" class="btn btn-primary btn-lg btn-block">Paso 4</button><br><br>
+        <script type="text/javascript">
+          function paso4(){
+            alert("Una vez que se empieza a desintegrar el tomate es momento de regresar las presas de pollo y cubrir a tope con agua. Y cuando rompa el hervor dejamos cocinar las presas de pollo durante 15 a 20 minutos para que agarre más sabor. ");
+          }
+        </script>
+        <button onclick="paso5();" style="margin-right:40px;" onclick="ingredientes();" type="button" class="btn btn-primary btn-lg btn-block">Paso 5</button><br><br>
+        <script type="text/javascript">
+          function paso5(){
+            alert("Es momento de agregar las arvejas junto con la zanahoria cortada como ustedes prefieran. Desde el hervor dejaremos cocinar por aproximadamente 10 minutos lo suficiente para que esté al dente, no queremos que esté suave ya que en este punto agregaremos las papas en cubos y dejaremos cocinar por unos minutos más.");
+          }
+        </script>
+        <button onclick="paso6();" style="margin-right:40px;" onclick="ingredientes();" type="button" class="btn btn-primary btn-lg btn-block">Paso 6</button><br><br>
+        <script type="text/javascript">
+          function paso6(){
+            alert("Una vez los cubos de papa estén suaves, es momento de servir acompañado de un riquísimo arroz.\n Buen Provecho :D");
+          }
+        </script>
+      </div>
+      <div class="fila1">
+         <img id="img2" style="width:300px; height:auto; padding-left: 50px;" src="img/gallo.png" alt="Imagen comida">
+
+      </div>
+    </div> <br>
+    <script type="text/javascript">
+       $(document).ready(function(){
+         setInterval(function() {
+           $('#img1').effect('shake', { times: 1, distance: 20 }, 1000);
+           $('#img2').effect('shake', { times: 1, distance: 20 }, 1000);
+         }, 2000);
+       });
+     </script>
+     <div class="contenedor">
+       <script>
+         $( function() {
+           $( "#accordion" ).accordion();
+         } );
+  </script>
+  <div style="padding:60px; " id="accordion">
+<h3 style="background:#B6FFFA">Paso 1</h3>
+<div>
+<p>
+  Trozar el pollo y sazonar con sal, pimienta y comino. En una sartén a fuego medio, calentamos un chorro generoso de aceite y, una vez caliente, doramos las presas de pollo por ambos lados.
+
+</p>
+</div>
+<h3 style="background:#B6FFFA">Paso 2</h3>
+<div>
+<p>
+"Una vez doradas las presas de pollo, retiramos y guardamos aparte. En la misma sartén, a fuego medio, realizamos nuestro aderezo sofriendo la cebolla cortada en cubitos junto con el ajo molido.
+</p>
+</div>
+<h3 style="background:#B6FFFA">Paso 3</h3>
+<div>
+<p>
+  Una vez que veamos que se quiere pegar al fondo de la olla y la cebolla está translúcida, agregamos el ají panca en polvo sin picante y también el tomate cortado en cubitos pequeños.
+
+</p>
+
+</div>
+<h3 style="background:#B6FFFA">Paso 4</h3>
+<div>
+<p>
+  Una vez que se empieza a desintegrar el tomate es momento de regresar las presas de pollo y cubrir a tope con agua. Y cuando rompa el hervor dejamos cocinar las presas de pollo durante 15 a 20 minutos para que agarre más sabor. ");
+
+</p>
+
+</div>
+<h3 style="background:#B6FFFA">Paso 5</h3>
+<div>
+<p>
+  Es momento de agregar las arvejas junto con la zanahoria cortada como ustedes prefieran. Desde el hervor dejaremos cocinar por aproximadamente 10 minutos lo suficiente para que esté al dente, no queremos que esté suave ya que en este punto agregaremos las papas en cubos y dejaremos cocinar por unos minutos más.
+
+</p>
+
+</div>
+<h3 style="background:#B6FFFA">Paso 6</h3>
+<div>
+<p>
+Una vez los cubos de papa estén suaves, es momento de servir acompañado de un riquísimo arroz. BUEN PROVECHO :D
+</p>
+</div>
+</div>
+     </div>
+    <div class="contenedor2"><br>
+
+    </div><br>
+  </body>
+  <footer style="background:#687EFF; color:white;">
+    <div style="display: flex; padding: 40px;">
+    <div style="flex-grow: 1;">
+      <p>Carlos Colcha</p>
+      <p>Séptimo A</p>
+      <p>22 de Noviembre del 2023</p>
+    </div>
+    <div style="flex-grow: 1;">
+      <p>Universidad Técnica de Cotopaxi</p>
+      <p>Sistemas de Información</p>
+      <p>Desarrollo Web</p>
+
+    </div>
+    <div style="flex-grow: 1;">
+      <nav class="menu-red-social">
+        <a href="https://www.facebook.com/carlos.colcha.9250/"><img class="icono-red-social" src="img/facebook_16423.png" alt="Logo Facebook"></a>
+        <a href="https://www.instagram.com/c.nubi.y/"><img class="icono-red-social" src="img/insta.png" alt="Logo Instagram"></a>
+        <a href="https://www.utc.edu.ec/"><img class="icono-red-social" src="img/UTC.png" alt="Logo UTC"></a>
+      </nav>
+
+    </div>
+  </div>
+  </footer>
+</html>

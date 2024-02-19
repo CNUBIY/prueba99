@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Página de Ejemplo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+ <link rel="stylesheet" href="/resources/demos/style.css">
+ <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+ <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+  <header>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"><img class="icono-red-social" src="img/UTC.png" alt="Logo sitio"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="crud.html">CRUD <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="receta.html">Receta</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="venta.html">Ventas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="platillos.html">Platillos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+  </header>
+
+  <body style="background:#B6FFFA;">
+    <h2 class="texto1">Precios de tus platillos favoritos</h2>
+    <script type="text/javascript">
+ $( function() {
+   var availableTags = [
+   "Chaulafán de Camarón",
+   "Tallarín Especial",
+   "Chaufarín Especial",
+   "Chaulafán Mixto",
+   "Pollo con Verduras",
+   "Porción de arroz"
+   ];
+   $( "#tags" ).autocomplete({
+     source: availableTags
+   });
+ } );
+ </script>
+    <div style="align-items:center; justify-content:center; text-align:center;" class="ui-widget">
+      <label for="tags">Platos </label>
+      <input id="tags">
+    </div>
+
+
+    <div style="align-items:center; justify-content:center; text-align:center;" class="contenedor6">
+      <div class="fila">
+        <div class="columna">
+          <b class="texto-ventas">Chaulafán de Camarón</b>
+          <img class="imagenes-venta" src="img/chau.jpg" alt="Imagen 1">
+          <b>Cantidad: </b><br><input style="width:70px;" id="plato1" type="number" name="" value=""><br><br>
+          <button onclick="precio1();" type="button" class="btn btn-outline-primary">$5.50</button>
+          <script type="text/javascript">
+            function precio1(){
+              var total=parseFloat(document.getElementById('plato1').value);
+              var precio=parseFloat(total*5.50);
+              alert("Tu precio a pagar sería de: $"+precio);
+            }
+          </script>
+        </div>
+        <div class="columna">
+          <b class="texto-ventas">Tallarin Especial</b>
+          <img class="imagenes-venta" src="img/tallarin.jpg" alt="Imagen 2">
+          <b>Cantidad: </b><br><input style="width:70px;" id="plato2" type="number" name="" value=""><br><br>
+          <button onclick="precio2();" type="button" class="btn btn-outline-primary">$7.50</button>
+          <script type="text/javascript">
+            function precio2(){
+              var total=parseFloat(document.getElementById('plato2').value);
+              var precio=parseFloat(total*7.50);
+              alert("Tu precio a pagar sería de: $"+precio);
+            }
+          </script>
+        </div>
+        <div class="columna">
+          <b class="texto-ventas">Chaufarín Especial</b>
+          <img class="imagenes-venta" src="img/mixto.jpg" alt="Imagen 3">
+          <b>Cantidad: </b><br><input style="width:70px;" id="plato3" type="number" name="" value=""><br><br>
+          <button onclick="precio3();" type="button" class="btn btn-outline-primary">$9.50</button>
+          <script type="text/javascript">
+            function precio3(){
+              var total=parseFloat(document.getElementById('plato3').value);
+              var precio=parseFloat(total*9.50);
+              alert("Tu precio a pagar sería de: $"+precio);
+            }
+          </script>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="columna">
+          <b class="texto-ventas">Chaulafán Mixto</b>
+          <img class="imagenes-venta" src="img/chaumix.jpg" alt="Imagen 4">
+          <b>Cantidad: </b><br><input style="width:70px;" id="plato4" type="number" name="" value=""><br><br>
+          <button onclick="precio4();" type="button" class="btn btn-outline-primary">$7.50</button>
+          <script type="text/javascript">
+            function precio4(){
+              var total=parseFloat(document.getElementById('plato4').value);
+              var precio=parseFloat(total*7.50);
+              alert("Tu precio a pagar sería de: $"+precio);
+            }
+          </script>
+        </div>
+        <div class="columna">
+          <b class="texto-ventas">Pollo con verduras</b>
+          <img class="imagenes-venta" src="img/pollover.jpg" alt="Imagen 5">
+          <b>Cantidad: </b><br><input style="width:70px;" id="plato5" type="number" name="" value=""><br><br>
+          <button onclick="precio5();" type="button" class="btn btn-outline-primary">$4.50</button>
+          <script type="text/javascript">
+            function precio5(){
+              var total=parseFloat(document.getElementById('plato5').value);
+              var precio=parseFloat(total*4.50);
+              alert("Tu precio a pagar sería de: $"+precio);
+            }
+          </script>
+        </div>
+        <div class="columna">
+          <b class="texto-ventas">Porción de arroz</b>
+          <img class="imagenes-venta" src="img/arroz.jpg" alt="Imagen 6">
+          <b>Cantidad: </b><br><input style="width:70px;" id="plato6" type="number" name="" value=""><br><br>
+          <button onclick="precio6();" type="button" class="btn btn-outline-primary">$1.25</button>
+          <script type="text/javascript">
+            function precio6(){
+              var total=parseFloat(document.getElementById('plato6').value);
+              var precio=parseFloat(total*1.25);
+              alert("Tu precio a pagar sería de: $"+precio);
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+    <br><div class="contenedor4">
+        <p >Selecciona todos tus platillos favoritos, se libre de poner la cantidad que tu desees y mira el precio a pagar, podrás ver lo que cuesta cada platillo según tus deseos. Ojo, no pidas mucho que puede ser doloroso para tu billetera</p>
+    </div>
+
+  </body>
+  <footer style="background:#687EFF; color:white;">
+    <div style="display: flex; padding: 40px;">
+    <div style="flex-grow: 1;">
+      <p>Carlos Colcha</p>
+      <p>Séptimo A</p>
+      <p>22 de Noviembre del 2023</p>
+    </div>
+    <div style="flex-grow: 1;">
+      <p>Universidad Técnica de Cotopaxi</p>
+      <p>Sistemas de Información</p>
+      <p>Desarrollo Web</p>
+
+    </div>
+    <div style="flex-grow: 1;">
+      <nav class="menu-red-social">
+        <a href="https://www.facebook.com/carlos.colcha.9250/"><img class="icono-red-social" src="img/facebook_16423.png" alt="Logo Facebook"></a>
+        <a href="https://www.instagram.com/c.nubi.y/"><img class="icono-red-social" src="img/insta.png" alt="Logo Instagram"></a>
+        <a href="https://www.utc.edu.ec/"><img class="icono-red-social" src="img/UTC.png" alt="Logo UTC"></a>
+      </nav>
+      <!-- Contenido de la tercera columna -->
+    </div>
+  </div>
+  </footer>
+</html>

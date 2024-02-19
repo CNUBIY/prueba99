@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Página de Ejemplo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+  <header>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html"><img class="icono-red-social" src="img/UTC.png" alt="Logo sitio"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="crud.html">CRUD <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="receta.html">Receta</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="venta.html">Ventas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="platillos.html">Platillos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+  </header>
+
+  <body style="background:#B6FFFA;">
+    <br><div class="contenedor">
+      <div class="fila1 texto">
+        <b>Desarrollo Web</b>
+        <h2 class="texto1">Universidad Técnica de Cotopaxi</h2>
+        <div style="text-align:center">
+          <p>Bienvenidos a mi Página</p>
+          <p>Creado por: Carlos Colcha</p>
+        </div>
+      </div>
+      <div class="fila1 imagen">
+        <div class="carrusel">
+          <div class="imagenes">
+            <img src="img/estudiantes.JPG" alt="Imagen 1">
+            <img src="img/Universidad-Tecnica-de-Cotopaxi.jpg" alt="Imagen 2">
+            <img src="img/whatsapp-image-2021-01-23-at-9.25.00-am.jpeg" alt="Imagen 3">
+          </div>
+          <button class="anterior">Anterior</button>
+          <button class="siguiente">Siguiente</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener('load', () => {
+        const carrusel = document.querySelector('.carrusel');
+        const imagenes = document.querySelector('.imagenes');
+        const botonAnterior = document.querySelector('.anterior');
+        const botonSiguiente = document.querySelector('.siguiente');
+
+        let posicion = 0;
+        const cantidadImagenes = document.querySelectorAll('.imagenes img').length;
+        let anchoImagen = document.querySelector('.imagenes img').clientWidth;
+
+        botonAnterior.addEventListener('click', () => {
+          cambiarImagen(-1);
+        });
+
+        botonSiguiente.addEventListener('click', () => {
+          cambiarImagen(1);
+        });
+
+        function cambiarImagen(direccion) {
+          if (posicion === 0 && direccion === -1) {
+            return;
+          }
+
+          if (posicion === cantidadImagenes - 1 && direccion === 1) {
+            return;
+          }
+
+          posicion += direccion;
+          imagenes.style.transform = `translateX(${-anchoImagen * posicion}px)`;
+        }
+      });
+    </script>
+
+
+    <br><div class="contenedor2">
+      <p style="padding:50px;">En esta página presentamos a las otras cuatro páginas que conforman a este sitio web, su creación se basó en HTML, CSS y JavaScript. También vamos
+      a dar uso a varios frameworks los cuales son Bootstrap y JQuery UI los cuales nos ayudarán para estilos e interacciones en nuestra página. En caso de que
+    no sepas que es jQuery dale click al botón...</p><br>
+    <button onclick="explicacion();"type="button" style="margin-right:20px;" class="btn btn-primary btn-lg btn-block">¿Qué es jQuery UI?</button>
+    <script type="text/javascript">
+      function explicacion(){
+        alert("jQuery UI es una biblioteca de componentes construidos sobre la biblioteca jQuery que permiten desarrollar sobre un conjunto de plug-ins, widgets y efectos visuales preconstruidos para la creación de aplicaciones web. Cada componente o módulo se desarrolla de acuerdo a la filosofía de jQuery​.");
+      }
+    </script>
+    </div><br>
+
+    <script>
+      $( function() {
+        $( "#tabs" ).tabs({
+          event: "mouseover"
+        });
+      } );
+  </script>
+
+  <div class="contenedor">
+      <div style="text-align:center; width:80%; " id="tabs">
+        <ul >
+          <li ><a href="#tabs-1">JavaScript   </a></li>
+          <li ><a href="#tabs-2">jQuery   </a></li>
+          <li ><a href="#tabs-3">jQuery UI   </a></li>
+        </ul>
+        <div id="tabs-1">
+          <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+          <img style="width:350px; height:auto;"src="img/JS.png" alt="">
+        </div>
+        <div id="tabs-2">
+          <p>jQuery es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web.​</p>
+          <img style="width:600px; height:auto;"src="img/jquery2.png" alt="">
+        </div>
+        <div id="tabs-3">
+          <p>jQuery UI es una biblioteca de componentes construidos sobre la biblioteca jQuery que permiten desarrollar sobre un conjunto de plug-ins, widgets y efectos visuales preconstruidos para la creación de aplicaciones web. Cada componente o módulo se desarrolla de acuerdo a la filosofía de jQuery​.</p>
+          <img style="width:600px; height:auto;"src="img/JQUI.png" alt="">
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer style="background:#687EFF; color:white;">
+    <div style="display: flex; padding: 40px;">
+    <div style="flex-grow: 1;">
+      <p>Carlos Colcha</p>
+      <p>Séptimo A</p>
+      <p>22 de Noviembre del 2023</p>
+    </div>
+    <div style="flex-grow: 1;">
+      <p>Universidad Técnica de Cotopaxi</p>
+      <p>Sistemas de Información</p>
+      <p>Desarrollo Web</p>
+
+    </div>
+    <div style="flex-grow: 1;">
+      <nav class="menu-red-social">
+        <a href="https://www.facebook.com/carlos.colcha.9250/"><img class="icono-red-social" src="img/facebook_16423.png" alt="Logo Facebook"></a>
+        <a href="https://www.instagram.com/c.nubi.y/"><img class="icono-red-social" src="img/insta.png" alt="Logo Instagram"></a>
+        <a href="https://www.utc.edu.ec/"><img class="icono-red-social" src="img/UTC.png" alt="Logo UTC"></a>
+      </nav>
+      <!-- Contenido de la tercera columna -->
+    </div>
+  </div>
+  </footer>
+</html>
